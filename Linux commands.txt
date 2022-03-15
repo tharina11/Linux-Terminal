@@ -1,0 +1,79 @@
+Linux commands
+pwd:print working directory
+
+ls: list all the items in a directory
+
+ls -a: List all items including hidden items
+
+cd: change directory
+
+ls -l: show more information of the files 
+
+ls -la: show more information of items including hidden items
+
+. and .. show the relative paths of the directories
+
+. : current directory
+
+.. : Parent directory  
+ 
+cd dir1/dir2 : takes down two child directories
+
+cd ../.. : Takes up two parent directories
+
+cd or cd ~ : navigate back to home directory
+
+cd ~/dir1 : navigate to dir1 located in the home directory
+
+mkdir 'dir name': create a directory
+
+touch 'filename': create a file
+
+open 'filename': open a file (use the app name need to be used to open the file before open)
+
+cp 'old name' 'new name': make a copy of a file 
+
+mv 'old file' 'new file': rename a file
+
+mv 'file name' 'destination' : move a file into a new directory
+
+ mv 'file name' ../'new file name' : rename and move a file 
+
+cp -r subdir/ copydir/: copy subdir into copydir
+
+mv subdir/../copydir : move copydir up one level and rename it as subdir
+
+rm : remove a file
+rm -r: delete a directory
+
+rm -rf: delete a directory forcefully
+
+find: display all the files and directories in that particular directory
+
+find . -type -d: find all the directories in the particular directory
+
+find . -type f -name: find all the files in the particular directory
+
+find . -type f -name "filename": find the files with the particular name
+
+find . -type f -name "test*": find all the files with the name test with a wildcard
+
+find . -type f -iname "test*": find all the case insensitive files with the name test with a wildcard (use extra i for make it case insensitive)
+
+find . -type f -mmin -10: Find files modified less than 10 minutes ago
+
+find . -type f -mmin +10: Find files modified more than 10 minutes ago
+
+find . -type f -mmin +1 -mmin -5: Find files modified more than 1 minutes ago and less than 5 minutes ago
+
+find . -type f -mtime +10: Find files modified more than 10 days ago
+
+amin, atime: access minutes and access time
+
+cmin, ctime: change minutes and change time
+
+find . -size +5M: Find everything over 5 MB under my current directory
+
+find . -empty: find all the empty files
+
+find . -perm 777: Find the files have 777 permission in the current directory

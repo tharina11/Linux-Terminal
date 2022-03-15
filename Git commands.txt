@@ -1,0 +1,67 @@
+# Version
+git --version
+
+# Check for username and email
+git config --list 
+
+# Save and exit
+:wq
+
+# help
+git config --help
+
+# Start tracking a directory by creating a directory
+git init
+
+# Check the status of the repository
+git status
+
+# Ignore files in the repository (add the names of the files need to be ignored
+touch .gitignore
+
+# Add files to staging area
+git add -A
+
+# When adding edits to a remote repo
+git pull origin main
+git push origin main
+
+# It is good to pull the changes to the local before you push the changes to the remote. Because,
+another developer may have added different edits to the repository at the same time you applied 
+the changes. So pull the updates from remote to local before you commit changes to the remote.
+
+
+###  Branching  ####
+
+#Create a branch of the desired feature. Then work on that branch. 
+#That is how development commonly works.
+git branch calc_divide
+
+# Apply changes, commit changes and push to the remote calc divide branch
+git push -u origin calc_divide
+
+# Merge the branch with the main branch
+chekout to the main branch
+pull the main branch to the origin
+
+# View merged branches so far
+git branch --merged
+
+# Merge calc_divide branch
+git merge calc_divide
+
+# Push the changes to the remote main branch
+git push origin main
+
+### Delete the merged branch##
+# Check
+git branch --merged
+# Delete the branch
+git branch -d calc_divide
+# Check for all the branches
+git branch -a 
+# Delete the branch from the remote repository
+git push origin --delete calc_divide
+
+../ means Parent Directory
+./ is ‘Current Directory‘
