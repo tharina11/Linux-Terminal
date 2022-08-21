@@ -1,0 +1,64 @@
+Source: https://www.youtube.com/watch?v=SPwyp2NG-bE
+
+Bash stands for Bourne Again SHell
+Created in 1989
+It's the command line in linux wrapped around the linux kernel
+Bash scripting is automating everything we type in the shell
+
+You write different types of scripts in Linux (BASH, Python, GO etc)
+Using '#!/bin/bash' we tell the bash interpreter what scripting language we want to use for the particular script. Always do that in your script.
+
+To save a bash script, hit 'ctrl+X' and follow instructions.
+Run a bash script with - 'bash scriptname.sh'
+
+If you can't execute a file, make it executable by giving permission as shown below.
+'-rw-rw-r--' - rw - read, write
+'chmod +x filename.sh' will convert the file into a executable format. 
+
+Create a variable as name= 'Ben'. Then use it as $name in your bash script
+
+'read name' - 'read' will store the user input in the 'name' variable
+
+name=$1 - This is a positional parameter. When we run the script, whatever the parameter we put after the script, matchup to $1.
+These variables can be equal to the outputs of commands
+whoami- who are you logged in as
+pwd - print working directory
+date - print current date time
+
+user=$(whoami) assigns the output of the command to the user variable
+
+RANDOM - generates a random number between 0 and 32767. RANDOM is a prebuilt variable in linux
+twitter="Elon Musk" This is how to create a system variable. But this variable cannot be used in a script yet. Because you cannot use it in a child process. 
+export twitter- Convert it to an environment variable to use it in a script.
+In linux, when a file has a dot in front of the file name, it is hidden. You have to type la -al to view the hidden files.
+Bashrc is a script that runs everytime you log in. It will set make sure that everything works.
+If you need to make a variable permanent, edit the .bashrc file
+
+### Arithmatic expressions####
+echo $((2+3)) - sum of 2 and 3
+
+The script made with following the third video
+#!/bin/bash
+
+echo "What is your name?"
+
+read name
+
+echo "How old are you?"
+
+read age
+
+echo "Hello, $name, you are $age years old" 
+
+sleep 1
+echo "calculating"
+sleep 1
+echo ".........."
+sleep 1
+echo ".........."
+sleep 1
+echo ".........."
+sleep 1
+echo "Hey $name, you will become a billionaire at the age $(($RANDOM % 14 +$age))"
+
+
