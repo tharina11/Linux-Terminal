@@ -1,10 +1,11 @@
 Source: https://www.youtube.com/watch?v=SPwyp2NG-bE
+https://www.w3resource.com/linux-system-administration/linux-commands-introduction.php
 
 Bash stands for Bourne Again SHell
 Created in 1989
 It's the command line in linux wrapped around the linux kernel
 Bash scripting is automating everything we type in the shell
-
+The shell prompt usually starts with '$' for ordinary users and "#' for admin  
 You write different types of scripts in Linux (BASH, Python, GO etc)
 Using '#!/bin/bash' we tell the bash interpreter what scripting language we want to use for the particular script. Always do that in your script.
 
