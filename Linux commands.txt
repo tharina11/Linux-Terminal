@@ -77,3 +77,10 @@ find . -size +5M: Find everything over 5 MB under my current directory
 find . -empty: find all the empty files
 
 find . -perm 777: Find the files have 777 permission in the current directory
+
+kill - end a process. includes the process id or the program name
+
+useradd username - creates a new user
+
+chmod - changes the mode of a file system object. files can have read, write, and execute permission
+
