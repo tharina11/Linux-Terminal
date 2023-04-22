@@ -1,0 +1,6 @@
+docker images - List docker images
+docker ps - List docker containers
+docker pull <name>:<tag> - Pull an image from docker registry 
+docker run -d <name>:<tag> - Run container in background and print container id (d for detach)
+docker run -d -p <host_port>:<container_port> <name>:<tag> - bind container's port to the host(p for publish)
+sudo lsof -i -P -n | grep <port number> - List who is using the port

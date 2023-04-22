@@ -1,0 +1,12 @@
+Source: https://www.w3resource.com/linux-system-administration/regular-expressions.php
+
+Linux Regex commands
+There are three different versions of regular expression syntax:
+
+BRE: Basic Regular expressions
+ERE: Extended Regular expressions
+PRCE: Perl Regular Expressions
+
+grep - print lines matching a pattern
+       grep has -E option to force a string to be read as ERE. 
+PRCE and ERE both use the pipe symbol for 'or'.
